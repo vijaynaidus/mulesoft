@@ -92,7 +92,7 @@
 	<distributionManagement>
    <snapshotRepository>
       <id>nexus-snapshots</id>
-      <url>https://repository.mulesoft.org/releases/</url>
+      <url></url>
    </snapshotRepository>
 </distributionManagement>
 </project>
