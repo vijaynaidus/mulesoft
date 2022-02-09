@@ -7,7 +7,7 @@
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
 
-	<name>test</name>
+	<name>mule-ci-cd-demo-dev</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -30,7 +30,7 @@
                         <muleVersion>4.4.0</muleVersion>
                         <username>vijaynaidus123</username>
                         <password>Sunny123#</password>
-                        <applicationName>test</applicationName>
+                        <applicationName>mule-ci-cd-demo-dev</applicationName>
                         <environment>Sandbox</environment>
                         <workerType>MICRO</workerType>
                         <objectStoreV2>true</objectStoreV2>
