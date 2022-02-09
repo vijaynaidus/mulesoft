@@ -92,7 +92,7 @@
 	<distributionManagement>
    <snapshotRepository>
       <id>nexus-snapshots</id>
-      <url>http://localhost:8081/nexus/content/repositories/snapshots</url>
+      <url>/home/ubuntu/.m2</url>
    </snapshotRepository>
 </distributionManagement>
 </project>
