@@ -18,37 +18,27 @@
 	</properties>
 
 	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-clean-plugin</artifactId>
-				<version>3.0.0</version>
-			</plugin><plugin>
-<groupId>org.mule.tools.maven</groupId>
-<artifactId>mule-maven-plugin</artifactId>
-<plugin>
-	<groupId>org.mule.tools.maven</groupId>
-	<artifactId>mule-maven-plugin</artifactId>
-	<version>${mule.maven.plugin.version}</version>
-	<extensions>true</extensions>
-	<configuration>
-	<cloudHubDeployment>
-	<uri>https://anypoint.mulesoft.com/</uri>
-	<muleVersion>${app.runtime}</muleVersion>
-	<username>${username}</username>
-	<password>${password}</password>
-	<applicationName>${project.artifactId}</applicationName>
-	<environment>Sandbox</environment>
-	<workerType>${workerType}</workerType>
-	<workers>1</workers>
-	<objectStoreV2>true</objectStoreV2>
-	<region> ${region} </region>
-	</cloudHubDeployment>
-	</configuration>
-	</plugin>
-			
-		</plugins>
-	</build>
+        <plugins>
+            <plugin>
+                <groupId>org.mule.tools.maven</groupId>
+                <artifactId>mule-maven-plugin</artifactId>
+                <version>3.3.5</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <cloudHubDeployment>
+                        <uri>https://anypoint.mulesoft.com</uri>
+                        <muleVersion>4.4.0</muleVersion>
+                        <username>vijaynaidus123</username>
+                        <password>Sunny123#</password>
+                        <applicationName>mulesoft-cicd-sample1</applicationName>
+                        <environment>Sandbox</environment>
+                        <workerType>MICRO</workerType>
+                        <objectStoreV2>true</objectStoreV2>
+                    </cloudHubDeployment>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 	<dependencies>
 		<dependency>
