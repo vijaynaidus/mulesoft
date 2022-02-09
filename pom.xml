@@ -92,7 +92,7 @@
 	<distributionManagement>
    <snapshotRepository>
       <id>nexus-snapshots</id>
-      <url>/home/ubuntu/.m2</url>
+      <url>https://repository.mulesoft.org/releases/</url>
    </snapshotRepository>
 </distributionManagement>
 </project>
