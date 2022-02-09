@@ -13,32 +13,33 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<app.runtime>4.4.0</app.runtime>
+		<app.runtime>4.4.0-20220124</app.runtime>
 		<mule.maven.plugin.version>3.5.2</mule.maven.plugin.version>
 	</properties>
 
 	<build>
-        <plugins>
-            <plugin>
-                <groupId>org.mule.tools.maven</groupId>
-                <artifactId>mule-maven-plugin</artifactId>
-                <version>3.5.2</version>
-                <extensions>true</extensions>
-                <configuration>
-                    <cloudHubDeployment>
-                        <uri>https://anypoint.mulesoft.com</uri>
-                        <muleVersion>4.4.0</muleVersion>
-                        <username>vijaynaidus123</username>
-                        <password>Sunny123#</password>
-                        <applicationName>mule-ci-cd-demo-dev</applicationName>
-                        <environment>Sandbox</environment>
-                        <workerType>MICRO</workerType>
-                        <objectStoreV2>true</objectStoreV2>
-                    </cloudHubDeployment>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+		<plugins>
+			<plugin>
+				<groupId>org.mule.tools.maven</groupId>
+				<artifactId>mule-maven-plugin</artifactId>
+				<version>3.5.2</version>
+				<extensions>true</extensions>
+				<configuration>
+					<cloudHubDeployment>
+						<uri>https://anypoint.mulesoft.com</uri>
+						<muleVersion>4.4.0</muleVersion>
+						<username>vijaynaidus123</username>
+						<password>Sunny123#</password>
+						<applicationName>mule-ci-cd-demo-dev</applicationName>
+						<environment>Sandbox</environment>
+						<workerType>MICRO</workerType>
+						<objectStoreV2>true</objectStoreV2>
+					</cloudHubDeployment>
+					<classifier>mule-application</classifier>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
 	<dependencies>
 		<dependency>
@@ -82,9 +83,9 @@
 		</pluginRepository>
 	</pluginRepositories>
 	<distributionManagement>
-   <snapshotRepository>
-      <id>nexus-snapshots</id>
-      <url></url>
-   </snapshotRepository>
-</distributionManagement>
+		<snapshotRepository>
+			<id>nexus-snapshots</id>
+			<url/>
+		</snapshotRepository>
+	</distributionManagement>
 </project>

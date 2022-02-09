@@ -21,4 +21,19 @@ output application/json
 			</ee:message>
 		</ee:transform>
 	</flow>
+	<flow name="testFlow1" doc:id="328e1deb-7aa9-44e9-af57-f2e6a17272c7" >
+		<http:listener doc:name="Listener" doc:id="421bd940-3df9-49e2-a386-c49f2567baae" config-ref="HTTP_Listener_config" path="test1"/>
+		<ee:transform doc:name="Transform Message" doc:id="f112fa37-ccef-497a-bf2e-ff4dbf7b4aac" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	"Date": now(),
+	"status": "hello" ++ attributes.queryParams.name default ""
+}
+]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
 </mule>
