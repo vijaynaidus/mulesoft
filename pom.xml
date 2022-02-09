@@ -43,7 +43,16 @@
                         <objectStoreV2>true</objectStoreV2>
 </cloudHubDeployment>
     </configuration>
-				
+				<executions>
+				  <execution>
+				    <id>deploy</id>
+				    <phase>deploy</phase>
+				    <goals>
+				      <goal>deploy</goal>
+				    </goals>
+				  </execution>
+				</executions>
+
 			</plugin>
 		</plugins>
 	</build>
