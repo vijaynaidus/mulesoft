@@ -16,7 +16,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 output application/json
 ---
 {
-	"app-name": app.name(),
+	"app-name": "test-app",
 	"status" :"success",
 	"date": now()
 }]]></ee:set-payload>
